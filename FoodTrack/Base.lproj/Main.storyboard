@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EE9-fG-agh">
-                                <rect key="frame" x="16" y="0.0" width="288" height="396.5"/>
+                                <rect key="frame" x="20" y="44" width="374" height="546.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLX-nn-Rpb">
                                         <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
@@ -24,20 +24,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qeD-Qr-iL8">
-                                        <rect key="frame" x="0.0" y="28.5" width="288" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qeD-Qr-iL8">
+                                        <rect key="frame" x="0.0" y="28.5" width="374" height="100"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2X-2z-eeY">
-                                        <rect key="frame" x="0.0" y="70.5" width="155" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2X-2z-eeY">
+                                        <rect key="frame" x="0.0" y="136.5" width="155" height="30"/>
                                         <state key="normal" title="Set Default Label Text "/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3go-6x-saF"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="puI-Du-KWn">
-                                        <rect key="frame" x="0.0" y="108.5" width="288" height="288"/>
+                                        <rect key="frame" x="0.0" y="174.49999999999997" width="320" height="320.00000000000006"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="puI-Du-KWn" secondAttribute="height" multiplier="1:1" id="bA3-uk-CIk"/>
@@ -46,6 +46,9 @@
                                             <outletCollection property="gestureRecognizers" destination="JAv-9D-zDX" appends="YES" id="D2u-Qh-6lB"/>
                                         </connections>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hHr-44-etn" customClass="RatingControl" customModule="FoodTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="502.5" width="252" height="44"/>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="qeD-Qr-iL8" secondAttribute="trailing" id="ZCm-wh-USR"/>
@@ -56,6 +59,7 @@
                         <constraints>
                             <constraint firstItem="EE9-fG-agh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3GW-Xc-WiE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EE9-fG-agh" secondAttribute="trailing" id="ROc-Oe-1y8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EE9-fG-agh" secondAttribute="bottom" constant="271.5" id="fvg-mc-acg"/>
                             <constraint firstItem="EE9-fG-agh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sDA-0C-pFW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -73,7 +77,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1186" y="56"/>
+            <point key="canvasLocation" x="-1078" y="-373"/>
         </scene>
     </scenes>
     <resources>

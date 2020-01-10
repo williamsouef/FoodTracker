@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B34E92D823C413D500E68019 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34E92D723C413D500E68019 /* RatingControl.swift */; };
 		B37E25E323C0CDF300A57126 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E25E223C0CDF300A57126 /* AppDelegate.swift */; };
 		B37E25E523C0CDF300A57126 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E25E423C0CDF300A57126 /* SceneDelegate.swift */; };
 		B37E25E723C0CDF300A57126 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E25E623C0CDF300A57126 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B34E92D723C413D500E68019 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		B37E25DF23C0CDF200A57126 /* FoodTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37E25E223C0CDF300A57126 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37E25E423C0CDF300A57126 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				B37E25E223C0CDF300A57126 /* AppDelegate.swift */,
 				B37E25E423C0CDF300A57126 /* SceneDelegate.swift */,
 				B37E25E623C0CDF300A57126 /* ViewController.swift */,
+				B34E92D723C413D500E68019 /* RatingControl.swift */,
 				B37E25E823C0CDF300A57126 /* Main.storyboard */,
 				B37E25EB23C0CDF800A57126 /* Assets.xcassets */,
 				B37E25ED23C0CDF800A57126 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34E92D823C413D500E68019 /* RatingControl.swift in Sources */,
 				B37E25E723C0CDF300A57126 /* ViewController.swift in Sources */,
 				B37E25E323C0CDF300A57126 /* AppDelegate.swift in Sources */,
 				B37E25E523C0CDF300A57126 /* SceneDelegate.swift in Sources */,
