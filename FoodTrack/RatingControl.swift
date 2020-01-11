@@ -117,12 +117,20 @@ import UIKit
         button.translatesAutoresizingMaskIntoConstraints = false
         button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true
         button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
+        
+        
+        
+        
+    
     //Setup the button
         button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
     // Add the button to the stack
         addArrangedSubview(button)
     // Add the new button to the rating button array
         ratingButtons.append(button)
+        
+        
+        
    
         updateButtonSelectionStates()
     }
